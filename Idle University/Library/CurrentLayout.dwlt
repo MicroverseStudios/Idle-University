@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 371}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -107,10 +107,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 677, y: 321}
-  m_MaxSize: {x: 12006, y: 8021}
+  m_MinSize: {x: 709, y: 471}
+  m_MaxSize: {x: 18004, y: 14021}
   vertical: 0
-  controlID: 91
+  controlID: 108
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -131,14 +131,14 @@ MonoBehaviour:
     height: 947
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 17}
   - {fileID: 16}
   - {fileID: 14}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -159,10 +159,10 @@ MonoBehaviour:
     y: 0
     width: 420
     height: 947
-  m_MinSize: {x: 200, y: 321}
-  m_MaxSize: {x: 4004, y: 8021}
+  m_MinSize: {x: 234, y: 471}
+  m_MaxSize: {x: 10004, y: 14021}
   vertical: 1
-  controlID: 92
+  controlID: 52
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -181,14 +181,14 @@ MonoBehaviour:
     y: 0
     width: 420
     height: 446
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 11}
+  m_MinSize: {x: 234, y: 271}
+  m_MaxSize: {x: 10004, y: 10021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 11}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -294,7 +294,7 @@ MonoBehaviour:
     width: 347
     height: 926
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
+  m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub/#/cloud-menu
   m_GlobalObjectTypeName: 
   m_RegisteredViewURLs:
   - https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
@@ -433,15 +433,15 @@ MonoBehaviour:
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000005000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 0000000000000000000000000a000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -574.5
-    m_HBaseRangeMax: 574.5
-    m_VBaseRangeMin: -454.5
-    m_VBaseRangeMax: 454.5
+    m_HBaseRangeMin: -400
+    m_HBaseRangeMax: 400
+    m_VBaseRangeMin: -640
+    m_VBaseRangeMax: 640
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -450,7 +450,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoom: 0
     m_UniformScale: 1
     m_UpDirection: 1
@@ -460,7 +460,7 @@ MonoBehaviour:
       y: 17
       width: 1149
       height: 909
-    m_Scale: {x: 1, y: 1}
+    m_Scale: {x: 0.71015626, y: 0.71015626}
     m_Translation: {x: 574.5, y: 454.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -468,12 +468,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -574.5
-      y: -454.5
-      width: 1149
-      height: 909
+      x: -808.97687
+      y: -640
+      width: 1617.9537
+      height: 1280
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 0.71015626
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 1149, y: 926}
@@ -508,14 +508,14 @@ MonoBehaviour:
     height: 926
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 2221.3822152621096
+  lastFramingTime: 1181.3695965904578
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.46066093, y: -0.73070335, z: -0.124806896}
+    m_Target: {x: 0.18618485, y: -0.9681735, z: -0.32812485}
     speed: 2
-    m_Value: {x: 0.46066093, y: -0.73070335, z: -0.124806896}
+    m_Value: {x: 0.18618485, y: -0.9681735, z: -0.32812485}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -539,13 +539,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.32523295, y: 0.6324689, z: -0.33193544, w: -0.61969805}
+    m_Target: {x: -0.49364743, y: 0.506249, z: -0.49276143, w: -0.50715905}
     speed: 2
-    m_Value: {x: -0.32523295, y: 0.6324689, z: -0.33193544, w: -0.61969805}
+    m_Value: {x: -0.49364746, y: 0.50624907, z: -0.49276146, w: -0.5071591}
   m_Size:
-    m_Target: 15.395417
+    m_Target: 16.915775
     speed: 2
-    m_Value: 15.395417
+    m_Value: 16.915775
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -607,9 +607,9 @@ MonoBehaviour:
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b4270000
-    m_LastClickedID: 10164
-    m_ExpandedIDs: 000000005e2700007227000000ca9a3bffffff7f
+    m_SelectedIDs: c2270000
+    m_LastClickedID: 10178
+    m_ExpandedIDs: 000000006627000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -637,7 +637,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005e270000
+    m_ExpandedIDs: 00000000662700007a270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -662,24 +662,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 3690ffff
-    m_LastClickedInstanceID: -28618
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: be4a0000c64a0000f02b000032270000c62b0000202f00001c2f0000022f0000fa2e0000e042010000000000de2700008e290000743b0000983b0000e03b0000ce3b0000aa3b000076300000a6290000a22e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Utility
-      m_OriginalName: Utility
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 10968
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 8}
     m_CreateAssetUtility:
@@ -721,9 +721,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3690ffff
-    m_LastClickedID: -28618
-    m_ExpandedIDs: 2cf8dfffd26de0fffebee0ff3690ffff86fbffff00000000
+    m_SelectedIDs: 78aa0100
+    m_LastClickedID: 109176
+    m_ExpandedIDs: 90ca7aff983d7cff24ed7dffee75f4ff9efbffff000000001a2d000054a70100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
