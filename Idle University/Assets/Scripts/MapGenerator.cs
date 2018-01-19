@@ -22,8 +22,8 @@ public class MapGenerator : MonoBehaviour
 
     public void GenerateMap()
     {
+        //populates list of tiles
         allTileCoords = new List<Coord>();
-
         for (int x = 0; x < mapSize.x; x++)
         {
             for (int y = 0; y < mapSize.y; y++)
@@ -31,6 +31,7 @@ public class MapGenerator : MonoBehaviour
                 allTileCoords.Add(new Coord(x, y));
             }
         }
+        //trims extra list spaces
         allTileCoords.TrimExcess();
 
         string holderName = "Generated Map";
@@ -53,7 +54,7 @@ public class MapGenerator : MonoBehaviour
             }
         }
 
-
+        //spawns cube at position on the map
         int obstacleCount = 1;
         for (int i = 0; i < obstacleCount; i++)
         {
