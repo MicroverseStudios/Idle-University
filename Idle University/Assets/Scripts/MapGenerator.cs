@@ -7,8 +7,10 @@ public class MapGenerator : MonoBehaviour
 
     public Transform tilePrefab;
     public Transform obstaclePrefab;
+    private GameObject building;
     public Vector2 mapSize;
-
+    public Material green;
+    private Vector3 tilePos;
     [Range(0, 1)]
     public float outlinePercent;
 
@@ -18,6 +20,7 @@ public class MapGenerator : MonoBehaviour
     void Start()
     {
         GenerateMap();
+        tilePos = new Vector3();
     }
 
     public void GenerateMap()
@@ -60,8 +63,8 @@ public class MapGenerator : MonoBehaviour
         {
             Coord randomCoord = GetCoord(position);
             Vector3 obstaclePosition = CoordToPosition(randomCoord.x, randomCoord.y);
-            Transform newObstacle = Instantiate(obstaclePrefab, obstaclePosition + Vector3.up * .5f, Quaternion.identity) as Transform;
-            newObstacle.parent = mapHolder;
+            building = Instantiate(obstaclePrefab.gameObject, obstaclePosition + Vector3.up * .5f, Quaternion.identity);
+            building.transform.parent = mapHolder;
         }
 
     }
@@ -69,6 +72,39 @@ public class MapGenerator : MonoBehaviour
     Vector3 CoordToPosition(int x, int y)
     {
         return new Vector3(-mapSize.x / 2 + 0.5f + x, 0, -mapSize.y / 2 + 0.5f + y);
+    }
+
+    private void Update()
+    {
+        
+        //if the player is moving the building
+        if (MoveBuilding.MovingBuilding)
+        {
+            Vector3 buildingPos = building.transform.position;
+
+            //for every tile
+            foreach (Transform child in transform.GetChild(0).transform)
+            {
+                if (child.CompareTag("Tile"))
+                {
+                    //if the distance between the building position and the tile is less than 0.5, highlight it green
+                    //USE 0.5F FOR 1X1 BUILDING AND 1 FOR 2X2
+                    if (Mathf.Abs(buildingPos.x - child.gameObject.transform.position.x) < 0.5f && Mathf.Abs(buildingPos.z - child.gameObject.transform.position.z) < 0.5f)
+                    {
+                        child.gameObject.GetComponent<MeshRenderer>().material.color = Color.green;
+                        tilePos = child.gameObject.transform.position;
+                    }
+                    else
+                    {
+                        child.gameObject.GetComponent<MeshRenderer>().material.color = Color.white;
+                    }
+                }
+            }
+        }
+        else
+        {
+            building.transform.position = tilePos;
+        }
     }
 
     public Coord GetCoord(int pos)
