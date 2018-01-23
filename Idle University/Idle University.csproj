@@ -288,6 +288,8 @@
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\MenuAnimationHandler.cs" />
+    <Compile Include="Assets\Scripts\ModifierHandler.cs" />
+    <Compile Include="Assets\Scripts\SpawnScript.cs" />
     <Compile Include="Assets\Scripts\Stats.cs" />
     <Compile Include="Assets\Scripts\TileOccupied.cs" />
     <Compile Include="Assets\Scripts\Utility.cs" />
